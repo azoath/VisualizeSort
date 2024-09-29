@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  font-family: Arial, sans-serif;
+}
+
+.App header h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+.bubble-sort-visualizer,
+.merge-sort-visualizer,
+.quicksort-visualizer,
+.insertion-sort-visualizer {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: white; /* White text */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bars-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 550px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  background-color: #ffffff; /* White background for visualization */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.bar-index {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #000000; /* Black text */
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #6f8ba9;
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0057b3;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: #81a8d2;
+}
+
+.info-section {
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+  background-image: linear-gradient(to top, #47628552 0%, #b6d0e459 90%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white; /* White text */
+  line-height: 1.6;
+  font-size: 25px; /* Adjusted for readability */
+}
+
+.info-section h2,
+.info-section h3 {
+  color: white; /* White text */
+  font-size: 25px; /* Adjusted for readability */
+}
+
+.info-section p,
+.info-section ol,
+.info-section ul,
+.info-section table {
+  color: white; /* White text */
+  font-size: 25px; /* Adjusted for readability */
+}
+
+.info-section ul {
+  list-style: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.info-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.info-section table th,
+.info-section table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  color: white; /* White text */
+}
+
+#footer-container {
+  color: white !important;
+  background-color: #000; /* Black background */
+}

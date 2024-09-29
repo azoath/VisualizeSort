@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+#visualsort {
+  font-family: "Playwrite AR", cursive;
+  font-size: 25px;
+  font-weight: 900;
+}
+#hero {
+  background-size: cover;
+  color: aliceblue;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  position: relative;
+}
+
+.animated-text {
+  font-size: 3rem;
+  color: #d4ecf2;
+  white-space: nowrap;
+  display: inline;
+  overflow: hidden;
+  border-right: 4px solid rgba(0, 207, 255, 0.75); /* Cursor color */
+  text-shadow: 0 0 10px rgba(0, 207, 255, 0.5), 0 0 20px rgba(0, 207, 255, 0.3),
+    0 0 30px rgba(0, 207, 255, 0.2);
+  animation: typing 4s steps(30, end) 1s 1 normal both,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(125, 215, 235, 0.75);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  font-family: Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/bg-image.png") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.body-content {
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  line-height: 1.6;
+  font-size: 25px;
+  color: #d4ecf2;
+}
+
+.footer-container {
+  color: white;
+  background-color: #000;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.text-center {
+  color: white;
+}
+
+.container-feature {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-box {
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(./assets/insertionsort.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width 0.5s;
+}
+.img-box:nth-child(2) {
+  background: url(./assets/bubblesort.png);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(3) {
+  background: url(./assets/quicksort.png);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(4) {
+  background: url(./assets/mergesort.png);
+  background-size: cover;
+  background-position: center;
+}
+.img-box:nth-child(5) {
+  background: url(./assets/selectionsort.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:hover {
+  width: 250px;
+  cursor: pointer;
+}
+
+td {
+  border: 3px solid whitesmoke;
+  padding: 2rem;
+}
+tr {
+  border: 3px solid whitesmoke;
+  padding: 2rem;
+}
